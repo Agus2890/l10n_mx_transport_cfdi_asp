@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+         <record id="view_res_partner_trasport_form" model="ir.ui.view">
+            <field name="name">res.partner.transport</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <notebook>
+                    <page string="Transport Figure" name="transport_figure" attrs="{'invisible': [('function','!=','Operador')]}">
+                        <group>
+                            <group>
+                                <field name="license_number"/>
+                            </group>
+                            <group>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+     
+    </data>
+</openerp>

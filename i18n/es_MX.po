@@ -1,0 +1,2043 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_mx_transport_cfdi
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-28 15:14+0000\n"
+"PO-Revision-Date: 2022-06-28 15:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid ""
+"\"Warning\",\"Not Attached PDF\n"
+"\""
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid ",<b> C.P</b>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<b>Destinatario:</b>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<b>No Total Mercancias:</b>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<b>Peso Total Mercancias:</b>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<b>Remitente:</b>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid ""
+"<br/>\n"
+"                               <b>Domicilio:</b>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid ""
+"<br/>\n"
+"                               <b>Fecha Salida:</b>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid ""
+"<br/>\n"
+"                               <b>RFC:</b>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\"><b>CARTA PORTE</b></font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\"><b>MERCANCIA</b></font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\"><b>OPERADOR</b></font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Aseguradora</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Año</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Bienes Transporta</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Cantidad</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">ClaveProd SAT</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">ClaveUnidad SAT</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Estado</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Licencia</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Medio de Transporte</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Nombre</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Numero de Permiso</font>"
+msgstr "<font style=\"font-size:11px\">Número de Permiso</font>"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Numero de Poliza</font>"
+msgstr "<font style=\"font-size:11px\">Número de Poliza</font>"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">País</font>"
+msgstr "<font style=\"font-size:11px\">País</font>"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Permiso STC</font>"
+msgstr "<font style=\"font-size:11px\">Permiso SCT</font>"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Peso KG</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Placa</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">RFC</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Tipo Autotransporte</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "<font style=\"font-size:11px\">Transporte Internacional</font>"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_account_transport_line
+msgid "Account Transport Line"
+msgstr "Línea de transporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__active
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__picking_relation_ids
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__picking_relation_ids
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__picking_relation_ids
+msgid "Albaranes Relacionados"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__anio_model
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__anio_model
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__anio_model
+msgid "Anio Model"
+msgstr "Modelo Año"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__lessee_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__lessee_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__lessee_id
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Arrendatario"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/account_move.py:0
+#, python-format
+msgid "Asigna una fecha de engrega"
+msgstr "Asigna una fecha de entrega"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/account_move.py:0
+#, python-format
+msgid "Asigna una fecha de salida"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Attached Successfully PDF\n"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Auto Transporte Federal"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Calcular peso"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid ""
+"Can't get the string original of the voucher.\n"
+"Ckeck your configuration."
+msgstr "No se puede obtener la cadena original del comprobante.\n"
+"Comprueba tu configuración".
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Cancelar Factura."
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__qty_limit_exc_01
+msgid "Cantidades limitadas y exceptuadas 01"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__qty_limit_exc_02
+msgid "Cantidades limitadas y exceptuadas 02"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_car_type_sat__name
+msgid "Car Type"
+msgstr "Tipo de Carro"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_car_type_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_car_type_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_car_type_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_car_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_car_type_sat_tree
+msgid "Car Type Sat"
+msgstr "Tipo de Carro Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_journal__type__tranport
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.fleet_cfdi_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Carta Porte"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "CartaPorte V2"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_move_out_invoice_type_cartaporte
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_move_out_invoice_type_cartaporte
+msgid "Cartaporte"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid ""
+"Check date of invoice and the validity of certificate, & that the register "
+"of the certificate is active."
+msgstr "Verifique la fecha de la factura y la validez del certificado, y que el registro"
+"del certificado está activo".
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__class_division
+msgid "Clase o Division"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__product_stcc_id
+msgid "Clave STCC"
+msgstr "Clave SCT"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Clave Transporte"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__unit_weight_id
+msgid "Clave Unidad"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__code
+msgid "Code"
+msgstr "Códe"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_code_aerotransport_sat__name
+msgid "Code Aerotransport"
+msgstr "Código Aerotransporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_code_aerotransport_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_code_aerotransport_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_code_aerotransport_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_code_aerotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_code_aerotransport_sat_tree
+msgid "Code Aerotransport Sat"
+msgstr "Código Aerotransporte Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_car_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_code_aerotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_autotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_load_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_material_danger_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_packaging_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_stc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_product_stcc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_rights_way_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_seasons_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_service_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_station_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_trailer_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_transport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_unit_weight_sat_form
+msgid "Codigo"
+msgstr "Código"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__insurance_partner_id
+msgid "Compañía de seguros"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__concessionaire
+msgid "Concesionario"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__config_autotransport_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__config_autotransport_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__config_autotransport_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__config_autotransport_id
+msgid "Conf. Auto Transporte Federal"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_config_autotransport_sat__name
+msgid "Config Autotransport"
+msgstr "Conf. Auto Transporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_config_autotransport_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_config_autotransport_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_config_autotransport_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_autotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_autotransport_sat_tree
+msgid "Config Autotransport Sat"
+msgstr "Conf. Auto Transporte Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_config_maritime_sat__name
+msgid "Config Maritime"
+msgstr "Conf. Marítima"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_config_maritime_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_config_maritime_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_config_maritime_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_maritime_sat_tree
+msgid "Config Maritime Sat"
+msgstr "Conf. Marítima Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Configure outgoing mail server named FacturaE: %s"
+msgstr "Configurar servidor de correo saliente denominado FacturaE: %s"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Connection test failed!"
+msgstr "¡La prueba de conexión falló!"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_container_maritime_sat__name
+msgid "Container Maritime"
+msgstr "Contenedor Marítimo"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_container_maritime_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_container_maritime_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_container_maritime_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_maritime_sat_tree
+msgid "Container Maritime Sat"
+msgstr "Contenedor Marítimo Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_container_type_sat__name
+msgid "Container Type"
+msgstr "Tipo de contenedor"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_container_type_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_container_type_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_container_type_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_type_sat_tree
+msgid "Container Type Sat"
+msgstr "Tipo Contenedor Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.actions.act_window,help:l10n_mx_transport_cfdi.action_move_out_invoice_type_cartaporte
+msgid "Create a customer invoice"
+msgstr "Crear una factura de cliente"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.actions.act_window,help:l10n_mx_transport_cfdi.action_move_out_invoice_type_cartaporte
+msgid ""
+"Create invoices, register payments and keep track of the discussions with "
+"your customers."
+msgstr ""
+"Cree facturas, registre pagos y realice un seguimiento de las discusiones con "
+"sus clientes."
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__create_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__create_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__date_departure
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__date_departure
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__date_departure
+msgid "Departure Date"
+msgstr "Fecha de salida"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_car_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_code_aerotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_autotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_load_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_material_danger_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_packaging_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_stc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_product_stcc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_rights_way_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_seasons_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_service_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_station_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_trailer_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_transport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_unit_weight_sat_form
+msgid "Descripción"
+msgstr "Descripción"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__description
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_car_type_sat__description
+msgid "Description of the Car Type that will be shown in the invoices"
+msgstr "Descripción del Tipo de Coche que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_code_aerotransport_sat__description
+msgid ""
+"Description of the Code Aerotransport that will be shown in the invoices"
+msgstr "Descripción del Código Aerotransporte que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_config_autotransport_sat__description
+msgid ""
+"Description of the Config Autotransport that will be shown in the invoices"
+msgstr ""
+"Descripción de la Config Autotransporte que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_config_maritime_sat__description
+msgid "Description of the Config Maritime that will be shown in the invoices"
+msgstr "Descripción de la Config Marítima que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_container_maritime_sat__description
+msgid ""
+"Description of the Container Maritime that will be shown in the invoices"
+msgstr ""
+"Descripción del Contenedor Marítimo que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_container_type_sat__description
+msgid "Description of the Container Type that will be shown in the invoices"
+msgstr "Descripción del Tipo de Contenedor que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_load_type_sat__description
+msgid "Description of the Load Type that will be shown in the invoices"
+msgstr "Descripción del Tipo de Carga que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_material_danger_sat__description
+msgid "Description of the Material Danger that will be shown in the invoices"
+msgstr "Descripción de la Peligrosidad Material que se reflejará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_packaging_type_sat__description
+msgid "Description of the Packaging Type that will be shown in the invoices"
+msgstr "Descripción del Tipo de Empaque que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_permit_maritime_sat__description
+msgid "Description of the Permit Maritime that will be shown in the invoices"
+msgstr "Descripción del Permiso Marítimo que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_permit_stc_sat__description
+msgid "Description of the Permit STC that will be shown in the invoices"
+msgstr "Descripción del SCT de Permiso que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_product_stcc_sat__description
+msgid "Description of the Product STCC that will be shown in the invoices"
+msgstr "Descripción del Producto SCT que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_rights_way_sat__description
+msgid "Description of the Rights Way that will be shown in the invoices"
+msgstr "Descripción del Camino Derecho que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_seasons_sat__description
+msgid "Description of the Seasons that will be shown in the invoices"
+msgstr "Descripción de las Temporadas que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_service_type_sat__description
+msgid "Description of the Service Type that will be shown in the invoices"
+msgstr "Descripción del Tipo de Servicio que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_station_sat__description
+msgid "Description of the Station that will be shown in the invoices"
+msgstr "Descripción de la Estación que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_trailer_type_sat__description
+msgid "Description of the Trailer Type that will be shown in the invoices"
+msgstr "Descripción del Tipo de Remolque que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_unit_weight_sat__description
+msgid "Description of the Unit Weight that will be shown in the invoices"
+msgstr "Descripción del Peso Unitario que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_transport_sat__description
+msgid "Description of the transport that will be shown in the invoices"
+msgstr "Descripción del transporte que se mostrará en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__designador_iata
+msgid "Designador IATA"
+msgstr "Designador IATA"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__designador_oaci
+msgid "Designador OACI"
+msgstr "Designador OACI"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Destination"
+msgstr "Destino"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__destination_ref
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__destination_ref
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__destination_ref
+msgid "Destination Reference"
+msgstr "Referencia de destino"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__station_dest_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__station_dest_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__station_dest_id
+msgid "Destination Station"
+msgstr "Estación de destino"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "Destino"
+msgstr "Destino"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__disp_spec
+msgid "Disp. espec."
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__disp_spec_emb_env
+msgid "Disp. espec. de emb/env"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__disp_spec_transp
+msgid "Disp. espec. de transp."
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_journal__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_res_partner__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_sale_order__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_stock_picking__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__display_name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__travel_distance
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__travel_distance
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__travel_distance
+msgid "Distance Traveled"
+msgstr "Distancia viajada"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__partner_emiter_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__partner_emiter_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__partner_emiter_id
+msgid "Emisor"
+msgstr "Emisor"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__cartapporte
+msgid "En Carta Porte ?"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__among
+msgid "Entre"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Error"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Error !"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Error en Cadena original!"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__invoice_relation_ids
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__invoice_relation_ids
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__invoice_relation_ids
+msgid "Facturas Relacionadas"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Figura Transporte"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__flag
+msgid "Flag"
+msgstr "Bandera"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__group_emb_env_onu
+msgid "Grupo de emb/env ONU"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__until
+msgid "Hasta"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_journal__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_res_partner__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_sale_order__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_stock_picking__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__id
+msgid "ID"
+msgstr "Identificación"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Identificacion Vehicular"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__shipping_type__incomming
+msgid "Incomming"
+msgstr "Entrante"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__type_cfdi__i
+msgid "Ingreso"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__inst_emb_env
+msgid "Inst. de emb/env"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__inst_transp
+msgid "Inst. de transp."
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__insurance_policy
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__insurance_policy
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__insurance_policy
+msgid "Insurance Policy"
+msgstr "Póliza de seguros"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__insurance_partner_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__insurance_partner_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__insurance_partner_id
+msgid "Insurance company"
+msgstr "Compañía de seguros"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__shipping_type__internal
+msgid "Internal"
+msgstr "Interno"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__invoice_id
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__transport_related__invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__invoice_line_id
+msgid "Invoice line"
+msgstr "línea de factura"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "Kg"
+msgstr "Kg"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_journal____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_res_partner____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_sale_order____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_stock_picking____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat____last_update
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__write_uid
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__write_date
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__license_number
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__license_number
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__license_number
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_res_partner__license_number
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_res_users__license_number
+msgid "License number"
+msgstr "Número de licencia"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_load_type_sat__name
+msgid "Load Type"
+msgstr "Tipo de carga"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_load_type_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_load_type_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_load_type_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_load_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_load_type_sat_tree
+msgid "Load Type Sat"
+msgstr "Tipo de carga Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_material_danger_sat__name
+msgid "Material Danger"
+msgstr "Material peligroso"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_material_danger_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_material_danger_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_material_danger_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_material_danger_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_material_danger_sat_tree
+msgid "Material Danger Sat"
+msgstr "Material Peligroso Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__material_danger_id
+msgid "Material peligroso"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Mercancias"
+msgstr "Mercancias"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__name
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__nationalidad
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__nationalidad
+msgid "Nationalidad"
+msgstr "Nacionalidad"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_code_aerotransport_sat__nationalidad
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_seasons_sat__nationalidad
+msgid "Nationalidad for Seasons"
+msgstr "Nacionalidad por Temporadas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__weight_net
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__weight_net
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__weight_net
+msgid "Net Weight"
+msgstr "Peso neto"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__transport_inter__0
+msgid "No"
+msgstr "No"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "No exist file [%s]. !"
+msgstr "No existe archivo [%s]. !"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.fleet_cfdi_view_form
+msgid "No. Licencia"
+msgstr "No. Licencia"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_car_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_code_aerotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_autotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_load_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_material_danger_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_packaging_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_stc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_product_stcc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_rights_way_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_seasons_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_service_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_station_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_trailer_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_transport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_unit_weight_sat_form
+msgid "Nombre"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid ""
+"Not Found outgoing mail server name of \"FacturaE\".\n"
+"Configure the outgoing mail server named \"FacturaE\""
+msgstr ""
+"Nombre del servidor de correo saliente no encontrado \"FacturaE\".\n"
+"Configure el servidor de correo saliente llamado \"FacturaE\""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Not captured a CERTIFICATE file in format PEM, in the company!"
+msgstr "¡No se capturó un archivo de CERTIFICADO en formato PEM, en la empresa!"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Not captured a KEY file in format PEM, in the company!"
+msgstr "¡No se capturó un archivo CLAVE en formato PEM, en la empresa!"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Not defined fname_xslt. !"
+msgstr "No definido fname_xslt. !"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_car_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_code_aerotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_autotransport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_config_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_container_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_load_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_material_danger_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_packaging_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_stc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_product_stcc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_rights_way_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_seasons_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_service_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_station_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_trailer_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_transport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_unit_weight_sat_form
+msgid "Notas"
+msgstr "Notas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_car_type_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_code_aerotransport_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_maritime_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_maritime_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_container_type_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_load_type_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_packaging_type_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_maritime_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_product_stcc_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_service_type_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_trailer_type_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_transport_sat__notes
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__notes
+msgid "Notes"
+msgstr "Notas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_car_type_sat__notes
+msgid "Notes of the Car Type that will be shown in the invoices"
+msgstr "Notas del Tipo de Coche que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_code_aerotransport_sat__notes
+msgid "Notes of the Code Aerotransport that will be shown in the invoices"
+msgstr "Notas del Código Aerotransporte que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_config_autotransport_sat__notes
+msgid "Notes of the Config Autotransport that will be shown in the invoices"
+msgstr "Notas de la Config Autotransporte que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_config_maritime_sat__notes
+msgid "Notes of the Config Maritime that will be shown in the invoices"
+msgstr "Notas de la Config Marítima que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_container_maritime_sat__notes
+msgid "Notes of the Container Maritime that will be shown in the invoices"
+msgstr "Notas del Contenedor Marítimo que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_container_type_sat__notes
+msgid "Notes of the Container Type that will be shown in the invoices"
+msgstr "Notas del Tipo de Contenedor que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_load_type_sat__notes
+msgid "Notes of the Load Type that will be shown in the invoices"
+msgstr "Notas del Tipo de Carga que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_material_danger_sat__notes
+msgid "Notes of the Material Danger that will be shown in the invoices"
+msgstr "Notas de la Peligrosidad Material que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_packaging_type_sat__notes
+msgid "Notes of the Packaging Type that will be shown in the invoices"
+msgstr "Notas del Tipo de Empaque que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_permit_maritime_sat__notes
+msgid "Notes of the Permit Maritime that will be shown in the invoices"
+msgstr "Notas del Permiso Marítimo que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_permit_stc_sat__notes
+msgid "Notes of the Permit STC that will be shown in the invoices"
+msgstr "Notas del SCT del Permiso que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_product_stcc_sat__notes
+msgid "Notes of the Product STCC that will be shown in the invoices"
+msgstr "Notas del Producto SCT que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_rights_way_sat__notes
+msgid "Notes of the Rights Way that will be shown in the invoices"
+msgstr "Notas de la Vía de Derechos que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_seasons_sat__notes
+msgid "Notes of the Seasons that will be shown in the invoices"
+msgstr "Notas de las Temporadas que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_service_type_sat__notes
+msgid "Notes of the Service Type that will be shown in the invoices"
+msgstr "Notas del Tipo de Servicio que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_station_sat__notes
+msgid "Notes of the Station that will be shown in the invoices"
+msgstr "Notas de la Estación que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_trailer_type_sat__notes
+msgid "Notes of the Trailer Type that will be shown in the invoices"
+msgstr "Notas del Tipo de Remolque que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_unit_weight_sat__notes
+msgid "Notes of the Unit Weight that will be shown in the invoices"
+msgstr "Notas del Peso Unitario que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_transport_sat__notes
+msgid "Notes of the transport that will be shown in the invoices"
+msgstr "Notas del transporte que se mostrarán en las facturas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__permit_stc_number
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__permit_stc_number
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__permit_stc_number
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__permit_stc_number
+msgid "Num. Permiso STC"
+msgstr "Num. Permiso SCT"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__axles_number
+msgid "Numero de ejes"
+msgstr "Número de ejes"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_config_autotransport_sat__tires_number
+msgid "Numero de llantas"
+msgstr "Número de llantas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__operator_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__operator_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__operator_id
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Operador"
+msgstr "Operador"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.report_cfdi_cartaporte_inherit
+msgid "Origen"
+msgstr "Origen"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Origin"
+msgstr "Origen"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__origin_ref
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__origin_ref
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__origin_ref
+msgid "Origin Reference"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__station_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__station_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__station_id
+msgid "Origin Station"
+msgstr "Referencia de origen"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_rights_way_sat__give_receive
+msgid "Otorga/Recibe"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__shipping_type__outgoing
+msgid "Outgoing"
+msgstr "Extrovertido"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_packaging_type_sat__name
+msgid "Packaging Type"
+msgstr "Tipo de embalaje"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_packaging_type_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_packaging_type_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_packaging_type_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_packaging_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_packaging_type_sat_tree
+msgid "Packaging Type Sat"
+msgstr "Tipo Embalaje Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_material_danger_sat__secondary_danger
+msgid "Peligro secundario"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__permit_stc_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__permit_stc_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__permit_stc_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__permit_stc_id
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Permiso SCT"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_permit_maritime_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_permit_maritime_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_permit_maritime_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_maritime_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_maritime_sat_tree
+msgid "Permit Maritime Sat"
+msgstr "Permiso Marítimo Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_permit_stc_sat__name
+msgid "Permit STC"
+msgstr "Permiso SCT"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_permit_stc_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_permit_stc_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_permit_stc_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_stc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_permit_stc_sat_tree
+msgid "Permit STC Sat"
+msgstr "Permiso SCT Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__transport_related__picking
+msgid "Picking"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__picking_line_id
+msgid "Picking line"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__license_plate
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__license_plate1
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__license_plate2
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__license_plate
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__license_plate1
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__license_plate2
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__license_plate
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__license_plate1
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__license_plate2
+msgid "Placa"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__insurance_policy
+msgid "Poliza se Seguro"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__product_code_sat_id
+msgid "Product Code SAT"
+msgstr "Código de producto SAT"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_product_stcc_sat__name
+msgid "Product STCC"
+msgstr "Producto SCT"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_product_stcc_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_product_stcc_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_product_stcc_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_product_stcc_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_product_stcc_sat_tree
+msgid "Product STCC Sat"
+msgstr "Producto SCT Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__product_uom_sat_id
+msgid "Product Unit SAT"
+msgstr "Producto Unidad SAT"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__owner_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__owner_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__owner_id
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Propietario"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__quantity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__operator_vat
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__operator_vat
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__operator_vat
+msgid "RFC Operador"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__railway_line
+msgid "Railway line"
+msgstr "Vía férrea"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__partner_receiver_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__partner_receiver_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__partner_receiver_id
+msgid "Receptor"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__trailer_type_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__trailer_type_id2
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__trailer_type_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__trailer_type_id2
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__trailer_type_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__trailer_type_id2
+msgid "Remolque"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__remolque
+msgid "Remolque  ?"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__fleet_id1
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__fleet_id2
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__fleet_id1
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__fleet_id2
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__fleet_id1
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__fleet_id2
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Remolque 1"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Remolque 2"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Remolques o semi remolques"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_rights_way_sat__name
+msgid "Rights Way"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_rights_way_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_rights_way_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_rights_way_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_rights_way_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_rights_way_sat_tree
+msgid "Rights Way Sat"
+msgstr "Derecho de Paso Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__transport_related__sale
+msgid "Sale"
+msgstr "Venta"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__sale_line_id
+msgid "Sale line"
+msgstr "Líneas de venta"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_sale_order
+msgid "Sales Order"
+msgstr "Orden de venta"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__date_planned
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__date_planned
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__date_planned
+msgid "Scheduled Date"
+msgstr "Cita agendada"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_product_stcc_sat_search
+msgid "Search Product STCC Sat"
+msgstr "Buscar Producto SCT Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_unit_weight_sat_search
+msgid "Search Unit Weigh Sat"
+msgstr "Buscar Unidad Peso Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_seasons_sat__name
+msgid "Seasons"
+msgstr "Estaciones"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_seasons_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_seasons_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_seasons_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_seasons_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_seasons_sat_tree
+msgid "Seasons Sat"
+msgstr "Estaciones Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Seguro"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/account_move.py:0
+#, python-format
+msgid "Seleccione su \"Factura\", \"Venta\" o \"Orden de entreg\" a transportar..."
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_account_journal__type
+msgid ""
+"Select 'Sale' for customer invoices journals.\n"
+"Select 'Purchase' for vendor bills journals.\n"
+"Select 'Cash' or 'Bank' for journals that are used in customer or vendor payments.\n"
+"Select 'General' for miscellaneous operations journals."
+msgstr ""
+"Seleccione 'Ventas' para diarios de facturas de cliente.\n"
+"Seleccione 'Compras' para diarios de facturas de proveedor.\n"
+"Seleccione 'Efectivo' o 'Banco' para diarios que se usan para pagos de clientes y proveedores. \n"
+"Seleccione 'General' para diarios que contienen operaciones varias."
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Sent Successfully\n"
+msgstr "Enviado correctamente\n"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_service_type_sat__name
+msgid "Service Type"
+msgstr "Tipo de servicio"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_service_type_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_service_type_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_service_type_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_service_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_service_type_sat_tree
+msgid "Service Type Sat"
+msgstr "Tipo Servicio Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__shipped_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__shipped_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__shipped_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_sale_order__shipped_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_stock_picking__shipped_cfdi
+msgid "Shipped Cfdi"
+msgstr "Cfdi enviado"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__shipping_type
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__shipping_type
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__shipping_type
+msgid "Shipping Type"
+msgstr "Tipo de envío"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__transport_inter__1
+msgid "Si"
+msgstr "Sí"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_car_type_sat__code
+msgid "Specify the Code for Car Type"
+msgstr "Especifique el código para el tipo de automóvil"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_code_aerotransport_sat__code
+msgid "Specify the Code for Code Aerotransport"
+msgstr "Especifique el Código para el Código Aerotransporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_config_autotransport_sat__code
+msgid "Specify the Code for Config Autotransport"
+msgstr "Especifique el código para el transporte automático de configuración"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_config_maritime_sat__code
+msgid "Specify the Code for Config Maritime"
+msgstr "Especifique el código para la configuración marítima"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_container_maritime_sat__code
+msgid "Specify the Code for Container Maritime"
+msgstr "Especifique el código para contenedores marítimos"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_container_type_sat__code
+msgid "Specify the Code for Container Type"
+msgstr "Especifique el código para el tipo de contenedor"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_load_type_sat__code
+msgid "Specify the Code for Load Type"
+msgstr "Especifique el código para el tipo de carga"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_material_danger_sat__code
+msgid "Specify the Code for Material Danger"
+msgstr "Especificar el Código de Peligro Material"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_packaging_type_sat__code
+msgid "Specify the Code for Packaging Type"
+msgstr "Especifique el código para el tipo de embalaje"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_permit_maritime_sat__code
+msgid "Specify the Code for Permit Maritime"
+msgstr "Especifique el Código para el Permiso Marítimo"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_permit_stc_sat__code
+msgid "Specify the Code for Permit STC"
+msgstr "Especifique el código para el permiso SCT"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_product_stcc_sat__code
+msgid "Specify the Code for Product STCC"
+msgstr "Especifique el código para el producto SCT"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_rights_way_sat__code
+msgid "Specify the Code for Rights Way"
+msgstr "Especifique el Código de Right Way"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_seasons_sat__code
+msgid "Specify the Code for Seasons"
+msgstr "Especifique el Código para Temporadas"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_service_type_sat__code
+msgid "Specify the Code for Service Type"
+msgstr "Especifique el código para el tipo de servicio"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_station_sat__code
+msgid "Specify the Code for Station"
+msgstr "Especifique el código para la estación"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_trailer_type_sat__code
+msgid "Specify the Code for Trailer Type"
+msgstr "Especifique el código para el tipo de remolque"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_transport_sat__code
+msgid "Specify the Code for Transport"
+msgstr "Especifique el código para el transporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_unit_weight_sat__code
+msgid "Specify the Code for Unit Weigh"
+msgstr "Especifique el código para el peso unitario"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_station_sat__name
+msgid "Station"
+msgstr "Estación"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_station_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_station_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_station_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_station_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_station_sat_tree
+msgid "Station Sat"
+msgstr "Estación Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_unit_weight_sat__symbol
+msgid "Symbol"
+msgstr "Símbolo"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "The Type Electronic Invoice:"
+msgstr "El Tipo Factura Electrónica:"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__type_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__type_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__type_cfdi
+msgid "Tipo CFDI"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_fleet_vehicle__trailer_type_id
+msgid "Tipo Remolque"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__distance
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__distance
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__distance
+msgid "Total Distance"
+msgstr "Distancia total"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__carrier_tracking_ref
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__carrier_tracking_ref
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__carrier_tracking_ref
+msgid "Tracking Reference"
+msgstr "Referencia de seguimiento"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_trailer_type_sat__name
+msgid "Trailer Type"
+msgstr "Tipo de remolque"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_trailer_type_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_trailer_type_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_trailer_type_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_trailer_type_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_trailer_type_sat_tree
+msgid "Trailer Type Sat"
+msgstr "Tipo Remolque Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_stock_picking
+msgid "Transfer"
+msgstr "Trasladar"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__transport
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__transport_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__transport
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__transport_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__transport
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__transport_id
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_transport_sat__name
+msgid "Transport"
+msgstr "Transporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_permit_stc_sat__transport_code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_seasons_sat__transport_code
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_station_sat__transport_code
+msgid "Transport Code"
+msgstr "Código de transporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_res_partner_trasport_form
+msgid "Transport Figure"
+msgstr "Figura de transporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__transport_inter
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__transport_inter
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__transport_inter
+msgid "Transport International"
+msgstr "Transporte Internacional"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__transport_line_ids
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__transport_line_ids
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__transport_line_ids
+msgid "Transport Lines"
+msgstr "Líneas de Transporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_transport_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_transport_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_transport_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_transport_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_transport_sat_tree
+msgid "Transport Sat"
+msgstr "Transporte Sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Transport line"
+msgstr "línea de transporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__transport_related
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__transport_related
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__transport_related
+msgid "Transport related"
+msgstr "Relacionado con el transporte"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields.selection,name:l10n_mx_transport_cfdi.selection__account_move__type_cfdi__t
+msgid "Traslado"
+msgstr "Traslado"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_journal__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Type Electronic Invoice Unknow!"
+msgstr "Tipo Factura Electrónica ¡Desconocido!"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_unit_weight_sat__name
+msgid "Unit Weigh"
+msgstr "Unidad de peso"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.actions.act_window,name:l10n_mx_transport_cfdi.action_unit_weight_sat
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_unit_weight_sat
+#: model:ir.ui.menu,name:l10n_mx_transport_cfdi.menu_action_unit_weight_sat
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_unit_weight_sat_form
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_unit_weight_sat_tree
+msgid "Unit Weigh Sat"
+msgstr "Unidad Peso sat"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__weight_uom_sat_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__weight_uom_sat_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__weight_uom_sat_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__uom_id
+msgid "Unit of Measure"
+msgstr "Unidad de medida"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_account_bank_statement_line__weight_uom_sat_id
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_account_move__weight_uom_sat_id
+#: model:ir.model.fields,help:l10n_mx_transport_cfdi.field_account_payment__weight_uom_sat_id
+msgid "Unit of measurement for Weight"
+msgstr "Unidad de medida para Peso"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Unknow driver for %s"
+msgstr "Controlador desconocido para %s"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__price_subtotal
+msgid "Valor Mercancia"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model,name:l10n_mx_transport_cfdi.model_fleet_vehicle
+msgid "Vehicle"
+msgstr "Vehículo"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__fleet_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__fleet_id
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__fleet_id
+msgid "Vehiculos"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__sale_relation_ids
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__sale_relation_ids
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__sale_relation_ids
+msgid "Ventas Relacionadas"
+msgstr ""
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Warning"
+msgstr "Advertencia"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Warning !"
+msgstr "Advertencia  !"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "Warning!"
+msgstr "Advertencia!"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_bank_statement_line__weight
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_move__weight
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_payment__weight
+#: model_terms:ir.ui.view,arch_db:l10n_mx_transport_cfdi.view_account_move_customer_trasport_form
+msgid "Weight"
+msgstr "Peso"
+
+#. module: l10n_mx_transport_cfdi
+#: model:ir.model.fields,field_description:l10n_mx_transport_cfdi.field_account_transport_line__weight_kg
+msgid "Weight Kg"
+msgstr "Peso kg"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid "You can not remove an attachment of an payment"
+msgstr "No puede eliminar un archivo adjunto de un pago"
+
+#. module: l10n_mx_transport_cfdi
+#: code:addons/l10n_mx_transport_cfdi/models/ir_attachment_transport.py:0
+#, python-format
+msgid ""
+"Your customer does not have email.\n"
+"Configure the mail of your \"Customer\""
+msgstr ""
+"Su cliente no tiene correo electrónico.\n"
+"Configura el correo de tu \"Cliente\""

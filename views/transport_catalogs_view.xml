@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <!-- Transport SAT -->
+        <record model="ir.ui.view" id="view_transport_sat_tree">
+            <field name="name">transport.sat.tree</field>
+            <field name="model">transport.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Transport Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_transport_sat_form">
+            <field name="name">transport.sat.form</field>
+            <field name="model">transport.sat</field>
+            <field name="arch" type="xml">
+                <form string="Transport Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_transport_sat">
+            <field name="name">Transport Sat</field>
+            <field name="res_model">transport.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_transport_sat" id="menu_action_transport_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="transport.sat" name="import_transport_xlsx"/>
+        
+        <!-- Station SAT -->
+        <record model="ir.ui.view" id="view_station_sat_tree">
+            <field name="name">station.sat.tree</field>
+            <field name="model">station.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Station Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_station_sat_form">
+            <field name="name">station.sat.form</field>
+            <field name="model">station.sat</field>
+            <field name="arch" type="xml">
+                <form string="Station Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_station_sat">
+            <field name="name">Station Sat</field>
+            <field name="res_model">station.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_station_sat" id="menu_action_station_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="station.sat" name="import_station_xlsx"/> 
+
+        <!-- Seasons SAT -->
+        <record model="ir.ui.view" id="view_seasons_sat_tree">
+            <field name="name">seasons.sat.tree</field>
+            <field name="model">seasons.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Seasons Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_seasons_sat_form">
+            <field name="name">seasons.sat.form</field>
+            <field name="model">seasons.sat</field>
+            <field name="arch" type="xml">
+                <form string="Seasons Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="transport_code" select="1"/>
+                    <field name="nationalidad" select="1"/>
+                    <field name="designador_iata" select="1"/>
+                    <field name="railway_line" select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_seasons_sat">
+            <field name="name">Seasons Sat</field>
+            <field name="res_model">seasons.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_seasons_sat" id="menu_action_seasons_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="seasons.sat" name="import_seasons_xlsx"/> 
+
+        <!-- Unit Weigh SAT -->
+        <record model="ir.ui.view" id="view_unit_weight_sat_tree">
+            <field name="name">unit.weight.sat.tree</field>
+            <field name="model">unit.weight.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Unit Weigh Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_unit_weight_sat_form">
+            <field name="name">unit.weight.sat.form</field>
+            <field name="model">unit.weight.sat</field>
+            <field name="arch" type="xml">
+                <form string="Unit Weigh Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="symbol" select="1"/>
+                    <field name="flag" select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_unit_weight_sat_search">
+            <field name="name">unit.weight.sat.search</field>
+            <field name="model">unit.weight.sat</field>
+            <field name="arch" type="xml">
+                <search string="Search Unit Weigh Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_unit_weight_sat">
+            <field name="name">Unit Weigh Sat</field>
+            <field name="res_model">unit.weight.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_unit_weight_sat" id="menu_action_unit_weight_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="unit.weight.sat" name="import_unit_weight_xlsx"/> 
+
+        <!-- Material Danger SAT -->
+        <record model="ir.ui.view" id="view_material_danger_sat_tree">
+            <field name="name">material.danger.sat.tree</field>
+            <field name="model">material.danger.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Material Danger Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_material_danger_sat_form">
+            <field name="name">material.danger.sat.form</field>
+            <field name="model">material.danger.sat</field>
+            <field name="arch" type="xml">
+                <form string="Material Danger Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="class_division" select="1"/>
+                    <field name="secondary_danger" select="1"/>
+                    <field name="group_emb_env_onu" select="1"/>
+                    <field name="disp_spec" select="1"/>
+                    <field name="qty_limit_exc_01" select="1"/>
+                    <field name="qty_limit_exc_02" select="1"/>
+                    <field name="inst_emb_env" select="1"/>
+                    <field name="disp_spec_emb_env" select="1"/>
+                    <field name="inst_transp" select="1"/>
+                    <field name="disp_spec_transp" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_material_danger_sat">
+            <field name="name">Material Danger Sat</field>
+            <field name="res_model">material.danger.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_material_danger_sat" id="menu_action_material_danger_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="material.danger.sat" name="import_material_danger_xlsx"/> 
+
+        <!-- Packaging Type SAT -->
+        <record model="ir.ui.view" id="view_packaging_type_sat_tree">
+            <field name="name">packaging.type.sat.tree</field>
+            <field name="model">packaging.type.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Packaging Type Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_packaging_type_sat_form">
+            <field name="name">packaging.type.sat.form</field>
+            <field name="model">packaging.type.sat</field>
+            <field name="arch" type="xml">
+                <form string="Packaging Type Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_packaging_type_sat">
+            <field name="name">Packaging Type Sat</field>
+            <field name="res_model">packaging.type.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_packaging_type_sat" id="menu_action_packaging_type_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="packaging.type.sat" name="import_packaging_type_xlsx"/> 
+
+        <!-- Permit STC Sat -->
+        <record model="ir.ui.view" id="view_permit_stc_sat_tree">
+            <field name="name">permit.stc.sat.tree</field>
+            <field name="model">permit.stc.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Permit STC Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_permit_stc_sat_form">
+            <field name="name">permit.stc.sat.form</field>
+            <field name="model">permit.stc.sat</field>
+            <field name="arch" type="xml">
+                <form string="Permit STC Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_permit_stc_sat">
+            <field name="name">Permit STC Sat</field>
+            <field name="res_model">permit.stc.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_permit_stc_sat" id="menu_action_permit_stc_sat" parent="l10n_mx_catalogs.menu_catalog"/>      
+        <function model="permit.stc.sat" name="import_permit_stc_xlsx"/> 
+
+        <!-- Config Autotransport Sat -->
+        <record model="ir.ui.view" id="view_config_autotransport_sat_tree">
+            <field name="name">config.autotransport.sat.tree</field>
+            <field name="model">config.autotransport.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Config Autotransport Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_config_autotransport_sat_form">
+            <field name="name">config.autotransport.sat.form</field>
+            <field name="model">config.autotransport.sat</field>
+            <field name="arch" type="xml">
+                <form string="Config Autotransport Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_config_autotransport_sat">
+            <field name="name">Config Autotransport Sat</field>
+            <field name="res_model">config.autotransport.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_config_autotransport_sat" id="menu_action_config_autotransport_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="config.autotransport.sat" name="import_config_autotransport_xlsx"/> 
+
+        <!-- Trailer Type Sat -->
+        <record model="ir.ui.view" id="view_trailer_type_sat_tree">
+            <field name="name">trailer.type.sat.tree</field>
+            <field name="model">trailer.type.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Trailer Type Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_trailer_type_sat_form">
+            <field name="name">trailer.type.sat.form</field>
+            <field name="model">trailer.type.sat</field>
+            <field name="arch" type="xml">
+                <form string="Trailer Type Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_trailer_type_sat">
+            <field name="name">Trailer Type Sat</field>
+            <field name="res_model">trailer.type.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_trailer_type_sat" id="menu_action_trailer_type_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="trailer.type.sat" name="import_trailer_type_xlsx"/> 
+
+        <!-- Config Maritime Sat -->
+        <record model="ir.ui.view" id="view_config_maritime_sat_tree">
+            <field name="name">config.maritime.sat.tree</field>
+            <field name="model">config.maritime.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Config Maritime Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_config_maritime_sat_form">
+            <field name="name">config.maritime.sat.form</field>
+            <field name="model">config.maritime.sat</field>
+            <field name="arch" type="xml">
+                <form string="Config Maritime Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_config_maritime_sat">
+            <field name="name">Config Maritime Sat</field>
+            <field name="res_model">config.maritime.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_config_maritime_sat" id="menu_action_config_maritime_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="config.maritime.sat" name="import_config_maritime_xlsx"/> 
+
+        <!-- Load Type Sat -->
+        <record model="ir.ui.view" id="view_load_type_sat_tree">
+            <field name="name">load.type.sat.tree</field>
+            <field name="model">load.type.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Load Type Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_load_type_sat_form">
+            <field name="name">load.type.sat.form</field>
+            <field name="model">load.type.sat</field>
+            <field name="arch" type="xml">
+                <form string="Load Type Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_load_type_sat">
+            <field name="name">Load Type Sat</field>
+            <field name="res_model">load.type.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_load_type_sat" id="menu_action_load_type_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="load.type.sat" name="import_load_type_xlsx"/> 
+
+        <!-- Container Maritime Sat -->
+        <record model="ir.ui.view" id="view_container_maritime_sat_tree">
+            <field name="name">container.maritime.sat.tree</field>
+            <field name="model">container.maritime.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Container Maritime Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_container_maritime_sat_form">
+            <field name="name">container.maritime.sat.form</field>
+            <field name="model">container.maritime.sat</field>
+            <field name="arch" type="xml">
+                <form string="Container Maritime Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_container_maritime_sat">
+            <field name="name">Container Maritime Sat</field>
+            <field name="res_model">container.maritime.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_container_maritime_sat" id="menu_action_container_maritime_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="container.maritime.sat" name="import_container_maritime_xlsx"/> 
+
+        <!-- Permit Maritime Sat -->
+        <record model="ir.ui.view" id="view_permit_maritime_sat_tree">
+            <field name="name">permit.maritime.sat.tree</field>
+            <field name="model">permit.maritime.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Permit Maritime Sat">
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_permit_maritime_sat_form">
+            <field name="name">permit.maritime.sat.form</field>
+            <field name="model">permit.maritime.sat</field>
+            <field name="arch" type="xml">
+                <form string="Permit Maritime Sat">
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_permit_maritime_sat">
+            <field name="name">Permit Maritime Sat</field>
+            <field name="res_model">permit.maritime.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_permit_maritime_sat" id="menu_action_permit_maritime_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="permit.maritime.sat" name="import_permit_maritime_xlsx"/> 
+
+        <!-- Code Aerotransport Sat -->
+        <record model="ir.ui.view" id="view_code_aerotransport_sat_tree">
+            <field name="name">code.aerotransport.sat.tree</field>
+            <field name="model">code.aerotransport.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Code Aerotransport Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_code_aerotransport_sat_form">
+            <field name="name">code.aerotransport.sat.form</field>
+            <field name="model">code.aerotransport.sat</field>
+            <field name="arch" type="xml">
+                <form string="Code Aerotransport Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_code_aerotransport_sat">
+            <field name="name">Code Aerotransport Sat</field>
+            <field name="res_model">code.aerotransport.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_code_aerotransport_sat" id="menu_action_code_aerotransport_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="code.aerotransport.sat" name="import_code_aerotransport_xlsx"/> 
+
+        <!-- Product STCC Sat -->
+        <record model="ir.ui.view" id="view_product_stcc_sat_tree">
+            <field name="name">product.stcc.sat.tree</field>
+            <field name="model">product.stcc.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Product STCC Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_product_stcc_sat_form">
+            <field name="name">product.stcc.sat.form</field>
+            <field name="model">product.stcc.sat</field>
+            <field name="arch" type="xml">
+                <form string="Product STCC Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_product_stcc_sat_search">
+            <field name="name">product.stcc.sat.search</field>
+            <field name="model">product.stcc.sat</field>
+            <field name="arch" type="xml">
+                <search string="Search Product STCC Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_product_stcc_sat">
+            <field name="name">Product STCC Sat</field>
+            <field name="res_model">product.stcc.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_product_stcc_sat" id="menu_action_product_stcc_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="product.stcc.sat" name="import_product_stcc_xlsx"/> 
+
+        <!-- Service Type Sat -->
+        <record model="ir.ui.view" id="view_service_type_sat_tree">
+            <field name="name">service.type.sat.tree</field>
+            <field name="model">service.type.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Service Type Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_service_type_sat_form">
+            <field name="name">service.type.sat.form</field>
+            <field name="model">service.type.sat</field>
+            <field name="arch" type="xml">
+                <form string="Service Type Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_service_type_sat">
+            <field name="name">Service Type Sat</field>
+            <field name="res_model">service.type.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_service_type_sat" id="menu_action_service_type_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="service.type.sat" name="import_service_type_xlsx"/> 
+
+        <!-- Rights Way Sat -->
+        <record model="ir.ui.view" id="view_rights_way_sat_tree">
+            <field name="name">rights.way.sat.tree</field>
+            <field name="model">rights.way.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Rights Way Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_rights_way_sat_form">
+            <field name="name">rights.way.sat.form</field>
+            <field name="model">rights.way.sat</field>
+            <field name="arch" type="xml">
+                <form string="Rights Way Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_rights_way_sat">
+            <field name="name">Rights Way Sat</field>
+            <field name="res_model">rights.way.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_rights_way_sat" id="menu_action_rights_way_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="rights.way.sat" name="import_rights_way_xlsx"/> 
+
+        <!-- Car Type Sat -->
+        <record model="ir.ui.view" id="view_car_type_sat_tree">
+            <field name="name">car.type.sat.tree</field>
+            <field name="model">car.type.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Car Type Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_car_type_sat_form">
+            <field name="name">car.type.sat.form</field>
+            <field name="model">car.type.sat</field>
+            <field name="arch" type="xml">
+                <form string="Car Type Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_car_type_sat">
+            <field name="name">Car Type Sat</field>
+            <field name="res_model">car.type.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_car_type_sat" id="menu_action_car_type_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="car.type.sat" name="import_car_type_xlsx"/> 
+
+        <!-- Container Type Sat -->
+        <record model="ir.ui.view" id="view_container_type_sat_tree">
+            <field name="name">container.type.sat.tree</field>
+            <field name="model">container.type.sat</field>
+            <field name="arch" type="xml">
+                <tree string="Container Type Sat">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="active"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_container_type_sat_form">
+            <field name="name">container.type.sat.form</field>
+            <field name="model">container.type.sat</field>
+            <field name="arch" type="xml">
+                <form string="Container Type Sat">
+                    <field name="name" placeholder='Nombre' select="1"/>
+                    <field name="code" placeholder='Codigo' select="1"/>
+                    <field name="active" select="1"/>
+                    <separator string="Descripción" colspan="4"/>
+                    <field name="description" placeholder='Descripción' nolabel="1" colspan="4"/>
+                    <field name="notes" placeholder='Notas' nolabel="1" colspan="4"/>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_container_type_sat">
+            <field name="name">Container Type Sat</field>
+            <field name="res_model">container.type.sat</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem action="action_container_type_sat" id="menu_action_container_type_sat" parent="l10n_mx_catalogs.menu_catalog"/>
+        <function model="container.type.sat" name="import_container_type_xlsx"/> 
+
+    </data>
+</openerp>

@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+        <!-- Tipo Transporte -->
+        <record id="federal_trasport" model="transport.sat">
+            <field name="name">Autotransporte Federal</field>
+            <field name="code">01</field>
+            <field name="description">Autotransporte Federal</field>
+        </record>
+        
+        <record id="marine_transport" model="transport.sat">
+            <field name="name">Transporte Marítimo</field>
+            <field name="code">02</field>
+            <field name="description">Transporte Marítimo</field>
+        </record>
+
+        <record id="air_transport" model="transport.sat">
+            <field name="name">Transporte Aéreo</field>
+            <field name="code">03</field>
+            <field name="description">Transporte Aéreo</field>
+        </record>
+
+        <record id="railway_transport" model="transport.sat">
+            <field name="name">Transporte Ferroviario</field>
+            <field name="code">04</field>
+            <field name="description">Transporte Ferroviario</field>
+        </record>
+
+        <record id="duct" model="transport.sat">
+            <field name="name">Ducto</field>
+            <field name="code">05</field>
+            <field name="description">Ducto</field>
+        </record>
+
+        <!-- Tipo Estacion -->
+        <record id="national_origin" model="station.sat">
+            <field name="name">Origen Nacional</field>
+            <field name="code">01</field>
+            <field name="description">Origen Nacional</field>
+        </record>
+        
+        <record id="intermediate" model="station.sat">
+            <field name="name">Intermedia</field>
+            <field name="code">02</field>
+            <field name="description">Intermedia</field>
+        </record>
+
+        <record id="final_national_destination" model="station.sat">
+            <field name="name">Destino Final Nacional</field>
+            <field name="code">03</field>
+            <field name="description">Destino Final Nacional</field>
+        </record>
+
+     </data>
+</openerp>

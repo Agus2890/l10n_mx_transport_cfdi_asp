@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<openerp>
+	<data noupdate="1">
+
+        <record id="l10n_mx_transport_cfdi_ir_seq_01" model="ir.sequence">
+            <field name="company_id" ref="base.main_company"/>
+            <field name="name">Secuencia CFDI Carta Porte</field>
+            <field name="active" eval="True"/>
+            <field name="padding">0</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+            <field name="implementation">no_gap</field>
+        </record>
+
+        <record id="l10n_mx_transport_cfdi_account_journal" model="account.journal">
+            <field name="company_id" ref="base.main_company"/>
+            <field name="sequence_id" ref="l10n_mx_transport_cfdi_ir_seq_01"/>
+            <field name="name">Diario de Carta Porte</field>
+            <field name="code">TCFDI</field>
+            <field name="type">sale</field>
+            <field name="update_posted">1</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="company2_id" ref="base.main_company"/>
+            <field name="currency" ref="base.MXN"/>
+        </record>
+
+	</data>
+</openerp>

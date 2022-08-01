@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="report_cfdi_cartaporte_inherit" inherit_id="l10n_mx_facturae.electronica_document">
+            <xpath expr="//table[1]" position="after">
+                <t t-if="o.transport">
+                <center><font style="font-size:11px"><b>CARTA PORTE</b></font></center>
+                	<table class="table table-condensed" style="font-size:11px; border:1px solid black">
+                		<tr style="border:1px solid grey;">
+                			<th width="50%">Origen</th>
+                			<th width="50%">Destino</th>
+                		</tr>
+                		<tr style="border:1px solid grey;">
+                			<td>
+                			   <b>Remitente:</b><span t-field="o.partner_emiter_id"/><br/>
+                               <b>Domicilio:</b><span t-field="o.partner_emiter_id.street_name"/> <span t-field="o.partner_emiter_id.street_number"/>,<b> C.P</b> <span t-field="o.partner_emiter_id.zip"/>
+                               <span t-field="o.partner_emiter_id.city_id"/> <span t-field="o.partner_emiter_id.state_id"/>  <span t-field="o.partner_emiter_id.country_id"/><br/>
+                               <b>RFC:</b><span t-field="o.partner_emiter_id.vat_split"/><br/>
+                               <b>Fecha Salida:</b><span t-field="o.date_departure"/><br/>
+                			</td>
+                			<td>
+                               <b>Destinatario:</b><span t-field="o.partner_receiver_id"/><br/>
+                               <b>Domicilio:</b><span t-field="o.partner_receiver_id.street_name"/> <span t-field="o.partner_receiver_id.street_number"/>,<b> C.P</b> <span t-field="o.partner_receiver_id.zip"/>
+                               <span t-field="o.partner_receiver_id.city_id"/> <span t-field="o.partner_receiver_id.state_id"/>  <span t-field="o.partner_receiver_id.country_id"/><br/>
+                               <b>RFC:</b><span t-field="o.partner_receiver_id.vat_split"/><br/>
+                               <b>Fecha Salida:</b><span t-field="o.date_planned"/><br/>
+                            </td>
+                		</tr>
+                	</table>
+                    <table class="table table-condensed" style="font-size:11px; border:1px solid black">
+                        <tr style="border:1px solid grey;">
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Medio de Transporte</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Transporte Internacional</font></th>
+                            <th class="data_bank_label" width="10%" colspan="2"><font style="font-size:11px">Tipo Autotransporte</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Permiso STC</font></th>
+                        </tr>
+                        <tr style="border:1px solid grey;">
+                            <td  width="10%"><span t-field="o.transport_id"/></td>
+                            <td  width="10%"><span t-field="o.transport_inter"/></td>
+                            <td  width="10%" colspan="2"><span t-field="o.config_autotransport_id"/></td>
+                            <td  width="10%"><span t-field="o.permit_stc_id"/></td>
+                        </tr>
+                        <tr style="border:1px solid grey;">
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Numero de Permiso</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Aseguradora</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Numero de Poliza</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Placa</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Año</font></th>
+                        </tr>
+                        <tr style="border:1px solid grey;">
+                            <td  width="10%"><span t-field="o.permit_stc_number"/></td>
+                            <td  width="10%"><span t-field="o.insurance_partner_id"/></td>
+                            <td  width="10%"><span t-field="o.insurance_policy"/></td>
+                            <td  width="10%"><span t-field="o.license_plate"/></td>
+                            <td  width="10%"><span t-field="o.anio_model"/></td>
+                        </tr>
+                    </table>
+                    <center><font style="font-size:11px"><b>MERCANCIA</b></font></center>
+                    <table class="table table-condensed" style="font-size:11px; border:1px solid black">
+                        <tr style="border:1px solid grey;">
+                            <th class="data_bank_label" width="30%"><font style="font-size:11px">Bienes Transporta</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Cantidad</font></th>
+                            <th class="data_bank_label" width="30%"><font style="font-size:11px">ClaveProd SAT</font></th>
+                            <th class="data_bank_label" width="20%"><font style="font-size:11px">ClaveUnidad SAT</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Peso KG</font></th>
+                        </tr>
+                        <t t-set="quantity" t-value="0"/>
+                        <t t-set="weight_kg" t-value="0"/>
+                        <tr t-foreach="o.transport_line_ids" t-as="line">
+                            <t t-set="quantity" t-value="quantity+line.quantity"/>
+                            <t t-set="weight_kg" t-value="weight_kg+line.weight_kg"/>
+
+                            <td  width="10%"><span t-field="line.product_code_sat_id"/></td>
+                            <td  width="10%"><span t-field="line.quantity"/></td>
+                            <td  width="10%"><span t-field="line.product_code_sat_id"/></td>
+                            <td  width="10%"><span t-field="line.product_uom_sat_id"/></td>
+                            <td  width="10%"><span t-field="line.weight_kg"/></td>
+                        </tr>
+                        <tr>
+                            <td><b>No Total Mercancias:</b></td>
+                            <td><b><span t-esc="quantity"/></b></td>
+                            <td></td>
+                            <td><b>Peso Total Mercancias:</b></td>
+                            <td><b><span t-esc="'%.2f'%(weight_kg)"/> Kg </b></td>
+                        </tr>
+                    </table>
+                    <center><font style="font-size:11px"><b>OPERADOR</b></font></center>
+                    <table class="table table-condensed" style="font-size:11px; border:1px solid black">
+                        <tr style="border:1px solid grey;">
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Nombre</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">RFC</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Licencia</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Estado</font></th>
+                            <th class="data_bank_label" width="10%"><font style="font-size:11px">Pais</font></th>
+                        </tr>
+                        <tr style="border:1px solid grey;">
+                            <td  width="10%"><span t-field="o.operator_id"/></td>
+                            <td  width="10%"><span t-field="o.operator_vat"/></td>
+                            <td  width="10%"><span t-field="o.license_number"/></td>
+                            <td  width="10%"><span t-field="o.operator_id.state_id"/></td>
+                            <td  width="10%"><span t-field="o.operator_id.country_id"/></td>
+                        </tr>
+                    </table>
+
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>

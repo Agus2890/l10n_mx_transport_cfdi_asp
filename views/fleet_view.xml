@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="fleet_cfdi_view_form" model="ir.ui.view">
+        <field name="name">fleet.vehicle.order.form</field>
+        <field name="model">fleet.vehicle</field>
+        <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+        <field name="arch" type="xml">
+            <field name="location"  position="replace">
+                <field name="location" string="No. Licencia"/>
+            </field>
+            <field name="location"  position="after">
+                <field name="insurance_partner_id"/>
+                <field name="insurance_policy"/>
+            </field>
+
+            <xpath expr="//field[@name='description']" position="after">
+                
+                <group string="Carta Porte">
+                    <field name="cartapporte"/>
+                    <field name="config_autotransport_id" attrs="{'required':[('cartapporte','=',True),('remolque','=',False)],'invisible':['|',('cartapporte','=',False),('remolque','=',True)]}"/>
+                    <field name="remolque"/>
+                    <field name="trailer_type_id" attrs="{'required':[('cartapporte','=',True),('remolque','=',True)],'invisible':['|',('cartapporte','=',False),('remolque','=',False)]}"/>
+                    <field name="permit_stc_id" string="Permiso SCT"/>
+                    <field name="permit_stc_number" string="Num. Permiso SCT"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

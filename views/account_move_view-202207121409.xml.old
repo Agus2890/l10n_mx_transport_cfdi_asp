@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_account_move_customer_trasport_form" model="ir.ui.view">
+            <field name="name">account.move.transport</field>
+            <field name="model">account.move</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='button_draft']" position="after">
+                    <button name="action_cartaporte_cancel" type="object" string="Cancelar Factura.."  attrs="{'invisible': [('transport','=',False),('state','in',['open','draft','cancel'] )]}"/>
+                 </xpath>
+                
+                <xpath expr="//field[@name='invoice_date']" position="after">
+                    <field name="type_cfdi" attrs="{'readonly': [('transport', '!=', True)]}" />
+                    <field name="transport" attrs="{'readonly': [('state', '!=', 'draft')]}" string="CartaPorte V2"/>
+                </xpath>
+
+                <xpath expr="//field[@name='journal_id']" position="after">
+                    <field name="shipped_cfdi" readonly="1"/>
+                </xpath>
+
+                <notebook>
+                    <page string="Carta Porte" name="accounting_transport" attrs="{'invisible': [('transport', '!=', True)]}">
+                        <group>
+                            <group>
+                                <field name="partner_emiter_id" options="{'no_create':True}" attrs="{'required': [('transport', '=', True)]}"/>
+                                <field name="transport_inter" string="Transport International"  attrs="{'required': [('transport', '=', True)]}" />
+                                <field name="fleet_id" options="{'no_create': True}" domain="[('remolque','=',False)]"/>
+                                <field name="transport_id" options="{'no_create': True}" attrs="{'required': [('transport', '=', True)]}" string=
+                                    "Clave Transporte"/>
+                                <field name="shipping_type" invisible="1"/><!--definir utilizacion-->
+                            </group>
+                            <group>
+                                <field name="partner_receiver_id" options="{'no_create': True}"  attrs="{'required': [('transport', '=', True)]}"/> 
+                                <field name="carrier_tracking_ref" invisible="1"/><!-- definir utilizacion-->
+                                <label for="weight" string="Peso"/>
+                                <div>
+                                    <field name="weight" class="oe_inline"/>
+                                    <field name="weight_uom_sat_id" nolabel="1" class="oe_inline" options="{'no_create': True}"/>
+                                </div>
+                            </group>
+                            <group>
+                                <field name="transport_related" string="Relacion con el transporte"/>
+                            </group>
+                            <group>
+                                <field name="invoice_relation_ids" attrs="{'invisible': [('transport_related', '!=', 'invoice')]}" 
+                                    domain="[('partner_id','=',partner_receiver_id),('move_type','=','out_invoice'),('shipped_cfdi','!=',True)]"
+                                    options="{'no_create': True,'no_open': True}" widget="many2many_tags"/>
+                                    
+                                <field name="picking_relation_ids" attrs="{'invisible': [('transport_related', '!=', 'picking')]}" 
+                                    domain="[('shipped_cfdi','!=',True)]"
+                                    options="{'no_create': True,'no_open': True}" widget="many2many_tags"/>
+                                <field name="sale_relation_ids" attrs="{'invisible': [('transport_related', '!=', 'sale')]}"
+                                    domain="[('partner_id','=',partner_id),('shipped_cfdi','!=',True)]" 
+                                    options="{'no_create': True,'no_open': True}" widget="many2many_tags"/>
+                            </group>
+                        </group>
+                        <group>
+                            <group string="Origen">
+                                <field name="station_id" options="{'no_create': True, 'no_open': True}" invisible="1"/><!-- definir Utilizacion-->
+                                <field name="date_departure" string="Fecha de salida" attrs="{'required': [('transport', '=', True)]}"/>
+                                <field name="origin_ref" string="Referencia de origen"/>
+                                <field name="distance" string="Distancia total"/>
+                            </group>
+                            <group string="Destino">
+                                <field name="station_dest_id" string="" options="{'no_create': True}" invisible="1"/><!-- definir Utilizacion-->
+                                <field name="date_planned" string="Fecha planeada" attrs="{'required': [('transport', '=', True)]}"/>
+                                <field name="destination_ref" string="Referencia de destino"/>
+                                <field name="travel_distance" string="Distancia viajada" attrs="{'required': [('transport', '=', True)]}"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Mercancias" name="accounting_transport" attrs="{'invisible': [('transport', '!=', True)]}">
+                                <button name="compute_transport_line" type="object"  string="Calcular peso"/>
+                                <field name="transport_line_ids">
+                                    <tree string="Transport line" editable="bottom">
+                                        <field name="invoice_id" invisible="1"/>
+                                        <field name="sale_line_id" invisible="1"/>
+                                        <field name="picking_line_id" invisible="1"/>
+                                        <field name="invoice_line_id" invisible="1"/>
+                                        <field name="product_id" required="1" options="{'no_create': True}" string="Producto"/>
+                                        <field name="name" invisible="1"/>
+                                        <field name="product_code_sat_id" required="1"  options="{'no_create': True}" string="Código de producto SAT"/>
+                                        <field name="product_uom_sat_id" required="1" string="Producto Unidad SAT"/>
+                                        <field name="uom_id" invisible="1"/>
+                                        <field name="quantity" required="1" string="Cantidad"/>
+                                        <field name="price_subtotal" required="1"/>
+                                        <field name="product_stcc_id" invisible="1"/>
+                                        <field name="weight_kg" required="1" string="Peso kg"/>
+                                        <field name="unit_weight_id" invisible="1"/>
+                                        <field name="material_danger_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Auto Transporte Federal" name="accounting_transport" attrs="{'invisible': [('transport', '!=', True)]}">
+                                <group>
+                                    <group string="Permiso SCT">
+                                         <field name="permit_stc_id" string="Permiso SCT" options="{'no_create': True, 'no_open': True}" attrs="{'required': [('transport', '=', True)]}"/>
+                                        <field name="permit_stc_number" string="Num. Permiso SCT" attrs="{'required': [('transport', '=', True)]}"/>
+                                    </group>
+                                    <group string="Seguro">
+                                        <field name="insurance_partner_id" string="Compañía de seguros" options="{'no_create': True, 'no_open': False}" attrs="{'required': [('transport', '=', True)]}"/>
+                                        <field name="insurance_policy" string="Póliza de seguros" attrs="{'required': [('transport', '=', True)]}"/>
+                                    </group>
+                                </group>
+                                <group string="Identificacion Vehicular">  
+                                    <group>
+                                        <field name="config_autotransport_id" options="{'no_create': True, 'no_open': True}" attrs="{'required': [('transport', '=', True)]}"/>
+                                    </group>
+                                    <group>
+                                        <field name="license_plate" attrs="{'required': [('transport', '=', True)]}"/>
+                                        <field name="anio_model" string="Modelo Año" attrs="{'required': [('transport', '=', True)]}"/>
+                                    </group>
+                                </group>
+                                <group string="Remolques o semi remolques">  
+                                    <group string="Remolque 1">
+                                        <field name="fleet_id1" domain="[('remolque','=',True)]" options="{'no_create': True, 'no_open': False}"/>
+                                        <field name="trailer_type_id" options="{'no_create': True,'no_open': True}"/>
+                                        <field name="license_plate1"/>
+                                    </group>
+                                    <group string="Remolque 2">
+                                        <field name="fleet_id2" domain="[('remolque','=',True)]" options="{'no_create': True, 'no_open': False}"/>
+                                        <field name="trailer_type_id2" options="{'no_create': True,'no_open': True}"/>
+                                        <field name="license_plate2"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Figura Transporte" name="accounting_transport" attrs="{'invisible': [('transport', '!=', True)]}">
+                                <group>
+                                    <group string="Operador">
+                                        <field name="operator_id" domain="[('function', '=', 'Operador')]" options="{'no_create': True, 'no_open': False}" attrs="{'required': [('transport', '=', True)]}"/>
+                                        <field name="operator_vat" attrs="{'required': [('transport', '=', True)]}"/>
+                                        <field name="license_number" string="Número de licencia" attrs="{'required': [('transport', '=', True)]}"/>
+                                    </group>
+                                    <group>
+                                    </group>
+                                </group>
+                                <group>
+                                    <group string="Propietario">
+                                        <field name="owner_id" options="{'no_create': True,'no_open': True}"/>
+                                    </group>
+                                    <group string="Arrendatario">
+                                        <field name="lessee_id" options="{'no_create': True,'no_open': True}"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+     
+        <record id="view_stock_picking_trasport_form" model="ir.ui.view">
+            <field name="name">stock.picking.transport</field>
+            <field name="model">stock.picking</field>
+            <field name="inherit_id" ref="stock.view_picking_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='origin']" position="after">
+                    <field name="shipped_cfdi" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_sale_order_trasport_form" model="ir.ui.view">
+            <field name="name">sale.order.transport</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='client_order_ref']" position="after">
+                    <field name="shipped_cfdi" readonly="1"/>
+                </xpath>
+            </field>
+        </record>
+
+
+         <!-- MENU DE ANTICIPO -->
+
+        <record id="action_move_out_invoice_type_cartaporte" model="ir.actions.act_window">
+            <field name="name">Cartaporte</field>
+            <field name="res_model">account.move</field>
+            <field name="view_mode">tree,kanban,form</field>
+            <field name="view_id" ref="account.view_out_invoice_tree"/>
+            <field name="search_view_id" ref="account.view_account_invoice_filter"/>
+            <field name="domain">['&amp;',('move_type', '=', 'out_invoice'), ('transport', '!=', False)]</field>
+            <field name="context">{'default_move_type': 'out_invoice','default_transport': True}</field>
+            <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create a customer invoice
+              </p><p>
+                Create invoices, register payments and keep track of the discussions with your customers.
+              </p>
+            </field>
+        </record>
+
+        <menuitem id="menu_action_move_out_invoice_type_cartaporte" action="action_move_out_invoice_type_cartaporte" parent="account.menu_finance_receivables" sequence="5" />
+
+    </data>
+</openerp>

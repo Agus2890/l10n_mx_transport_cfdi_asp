@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd http://www.sat.gob.mx/CartaPorte http://www.sat.gob.mx/sitio_internet/cfd/CartaPorte/CartaPorte.xsd" xmlns:cartaporte="http://www.sat.gob.mx/CartaPorte" Version="3.3" Folio="{{voucher.number}}" Fecha="{{date_stamped}}" Sello="@" NoCertificado="@" Certificado="@" SubTotal="0" Moneda="XXX" Total="0" TipoDeComprobante="T" LugarExpedicion="{{emitter.zip}}">
+    <cfdi:Emisor Rfc="{{emitter.partner_id.vat_split}}" Nombre="{{emitter.name}}" RegimenFiscal="{{emitter.partner_id.regimen_fiscal_id.clave}}"/>
+    <cfdi:Receptor Rfc="{{voucher.partner_id.vat_split}}" Nombre="{{voucher.partner_id.name}}" UsoCFDI="P01"/>
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="84111506" ClaveUnidad="ACT" Cantidad="1" Descripcion="FLETE" ValorUnitario="0" Importe="0">
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+
+    <cfdi:Complemento>
+        <cartaporte:CartaPorte TranspInternac="No" TotalDistRec="2" Version="1.0">
+            <cartaporte:Ubicaciones>
+                <cartaporte:Ubicacion TipoEstacion="01" DistanciaRecorrida="1">
+                  <cartaporte:Origen FechaHoraSalida="2021-05-14T20:45:59" NombreRemitente="Testename" RFCRemitente="URE180429TM6"/>
+                  <cartaporte:Domicilio Calle="JESUS VALDES SANCHEZ" CodigoPostal="25350" Colonia="0347" Estado="COA" Localidad="23" Municipio="004" NumeroExterior="728" Pais="MEX"/>
+                </cartaporte:Ubicacion>
+                <cartaporte:Ubicacion DistanciaRecorrida="1" TipoEstacion="01">
+                  <cartaporte:Destino FechaHoraProgLlegada="2021-05-14T20:46:59" NumRegIdTrib="121585958" ResidenciaFiscal="ARG"/>
+                  <cartaporte:Domicilio Calle="calle" CodigoPostal="99056" Colonia="002" Estado="ZAC" Localidad="0002" Municipio="000005" NumeroExterior="211" Pais="ARG" Referencia="casa blanca"/>
+                </cartaporte:Ubicacion>
+              </cartaporte:Ubicaciones>
+              <cartaporte:Mercancias NumTotalMercancias="1">
+                <cartaporte:Mercancia BienesTransp="12164501" Cantidad="1" ClaveUnidad="XNG" Descripcion="COSAS DE LA VIDA" Moneda="MXN" PesoEnKg="1.000" ValorMercancia="1.001"/>
+                <cartaporte:AutotransporteFederal NombreAseg="DEMO" NumPermisoSCT="Demo" NumPolizaSeguro="DEMO" PermSCT="TPAF01">
+                  <cartaporte:IdentificacionVehicular AnioModeloVM="2020" ConfigVehicular="C2" PlacaVM="aaaaaaa"/>
+                </cartaporte:AutotransporteFederal>
+              </cartaporte:Mercancias>
+              <cartaporte:FiguraTransporte CveTransporte="01">
+                <cartaporte:Operadores>
+                  <cartaporte:Operador NombreOperador="perdo pedro" NumLicencia="a234567890" RFCOperador="VAAM130719H60" ResidenciaFiscalOperador="MEX">
+                    <cartaporte:Domicilio Calle="JESUS VALDES SANCHEZ" CodigoPostal="25350" Colonia="0347" Estado="COA" Localidad="23" Municipio="004" NumeroExterior="728" Pais="MEX"/>
+                  </cartaporte:Operador>
+                </cartaporte:Operadores>
+            </cartaporte:FiguraTransporte>
+        </cartaporte:CartaPorte>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

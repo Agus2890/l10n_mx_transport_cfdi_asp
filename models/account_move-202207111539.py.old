@@ -1,0 +1,347 @@
+# -*- encoding: utf-8 -*-
+# © 2013 Mikrointeracciones de México (contacto@mikrointeracciones.com)
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
+
+from odoo import models, fields, api, _
+from odoo.exceptions import except_orm, Warning, RedirectWarning
+from odoo.addons import decimal_precision as dp
+import logging
+_logger = logging.getLogger(__name__)
+import time
+from datetime import datetime, timedelta
+import pytz
+
+
+
+class AccountMove(models.Model):
+    _inherit = 'account.move'
+
+    def action_cartaporte_cancel(self):
+        self.state='open'
+        self.action_cancel_sat()
+        return True
+
+
+    def _get_facturae_invoice_dict_data(self):      
+        invoice_data_parents = super(AccountMove, self)._get_facturae_invoice_dict_data()
+        if self.transport==True:
+            invoice_data_parents[0]['cfdi:Comprobante'].update({'TipoDeComprobante':self.type_cfdi})
+            if self.type_cfdi=='T':
+                invoice_data_parents[0]['cfdi:Comprobante'].update({'Moneda':'XXX','Total':0,'SubTotal':0})
+                invoice_data_parents[0]['cfdi:Comprobante'].pop("MetodoPago")
+                invoice_data_parents[0]['cfdi:Comprobante'].pop("TipoCambio")
+                invoice_data_parents[0]['cfdi:Comprobante'].pop("FormaPago")
+                for item in invoice_data_parents[0]['cfdi:Comprobante']['cfdi:Conceptos']:
+                    item['cfdi:Concepto'].update({'ObjetoImp':'01'})
+                    
+
+            if self.transport:
+                invoice_data_parents[0]['cfdi:Comprobante'].pop("cfdi:Impuestos")
+                invoice_data_parents[0]['cfdi:Comprobante']['cfdi:Receptor'].update({'DomicilioFiscalReceptor':self.partner_id.ref})
+                if not self.date_departure:
+                    raise Warning(_("Asigna una fecha de salida"))
+                if not self.date_planned:
+                    raise Warning(_("Asigna una fecha de engrega"))
+                complemento={'cfdi:Complemento':{}}
+                invoice_data_parents[0]['cfdi:Comprobante'].update({
+                    "xmlns:cartaporte20":"http://www.sat.gob.mx/CartaPorte20",
+                    'xsi:schemaLocation':"http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/CartaPorte20 http://www.sat.gob.mx/sitio_internet/cfd/CartaPorte/CartaPorte20.xsd"
+                    "http://www.sat.gob.mx/CartaPorte20 http://www.sat.gob.mx/sitio_internet/cfd/CartaPorte/CartaPorte20.xsd"
+                    })
+                mercancias=[]
+                i=0
+                entradasalida={'incomming':'Entrada','outgoing':'Salida'}
+                TranspInternac={'0':'No','1':'Si'}
+                for line in self.transport_line_ids:
+                    i+=1
+                    tz = pytz.timezone('America/Mexico_City')
+                    mercancias.append({'cartaporte20:Mercancia':{'BienesTransp':'50112000','Cantidad':line.quantity,
+                        'ClaveUnidad':line.product_uom_sat_id.code_sat,'Descripcion':line.product_code_sat_id.name,'PesoEnKg':"{0:.3f}".format(line.weight_kg),
+                        'ValorMercancia':line.price_subtotal,'Moneda':self.currency_id.name}})
+                complemento['cfdi:Complemento'].update({
+                    "cartaporte20:CartaPorte":{'EntradaSalidaMerc':entradasalida.get(self.shipping_type),'TotalDistRec':self.travel_distance,
+                    'TranspInternac':TranspInternac.get(self.transport_inter),
+                    'Version':"2.0",'ViaEntradaSalida':self.transport_id.code,
+                    'cartaporte20:Ubicaciones':[
+                    {'cartaporte20:Ubicacion':{'TipoUbicacion':"Origen",'RFCRemitenteDestinatario':self.company_id.partner_id.vat,'FechaHoraSalidaLlegada':str(self.date_departure.isoformat()),
+                    ##a cambiar
+                        'cartaporte20:Domicilio':{'Calle': self.partner_emiter_id.street_name, #'calle'
+                        'CodigoPostal':self.partner_emiter_id.zip, #'25350',
+                        'Estado':self.partner_emiter_id.state_id.code,#'COA',
+                        'Municipio':self.partner_emiter_id.city_id.code, 
+                        #'NumeroExterior':'211', #self.company_id.partner_id.street_number or 's/n',
+                        'Pais':'MEX',
+                        'Referencia':self.partner_emiter_id.street2, #'casa blanca'
+                        }},
+                    'cartaporte20:Ubicacionn':{'TipoUbicacion':"Destino",'DistanciaRecorrida':int(self.travel_distance),'RFCRemitenteDestinatario':self.partner_receiver_id.vat,
+                    'FechaHoraSalidaLlegada':str(self.date_planned.isoformat()),
+                        'cartaporte20:Domicilio':{'Calle':self.partner_receiver_id.street,'CodigoPostal':self.partner_receiver_id.zip,'Estado':self.partner_receiver_id.state_id.code,
+                        'Municipio':self.partner_receiver_id.city_id.code,'NumeroExterior':'33', #self.partner_receiver_id.street_number,
+                        'Pais':'MEX','Referencia':self.destination_ref}}}],
+                    'cartaporte20:Mercancias':{'UnidadPeso':'KGM','PesoBrutoTotal':"{0:.3f}".format(self.weight),'NumTotalMercancias':len(self.transport_line_ids),'lines':mercancias,
+                        'cartaporte20:Autotransporte':{'NumPermisoSCT':self.permit_stc_number,'PermSCT':self.permit_stc_id.code,
+                            'cartaporte20:IdentificacionVehicular':{'AnioModeloVM':self.anio_model,'ConfigVehicular':self.config_autotransport_id.code,'PlacaVM':self.license_plate},
+                            'cartaporte20:Seguros':{'AseguraRespCivil':self.insurance_partner_id.name,'PolizaRespCivil':self.insurance_policy}
+                        }
+                    },
+                    'cartaporte20:FiguraTransporte':{'cartaporte20:TiposFigura':{
+                        'TipoFigura':"01",'RFCFigura':self.operator_vat,'NumLicencia':self.license_number,'NombreFigura':self.operator_id.name}
+                    }}
+                })
+                if self.transport_inter=='0':
+                    complemento['cfdi:Complemento']['cartaporte20:CartaPorte'].pop("EntradaSalidaMerc")
+                    complemento['cfdi:Complemento']['cartaporte20:CartaPorte'].pop("ViaEntradaSalida")
+                if self.trailer_type_id:
+                    complemento['cfdi:Complemento']['cartaporte20:CartaPorte']['cartaporte20:Mercancias']['cartaporte20:Autotransporte'].update({
+                        'cartaporte20:Remolques':{'cartaporte20:Remolque':[{'SubTipoRem':self.trailer_type_id.code,'Placa':self.license_plate1}] }
+                        })
+                invoice_data_parents[0]['cfdi:Comprobante'].update(complemento)
+        return invoice_data_parents
+        
+    def _default_uom(self):
+        weight_uom_sat_id = self.env['unit.weight.sat'].search([('code','=','KGM')],limit=1)
+        return weight_uom_sat_id
+
+    @api.onchange('transport')
+    def _onchange_transport(self):
+        if self.transport:
+            jorunal_cp = self.env['account.journal'].search([('name','=','Carta Porte')],limit=1)
+            if not jorunal_cp:
+                raise Warning("No hay un diario llamado 'Carta Porte'")
+            else:
+                self.journal_id=jorunal_cp.id
+                
+    @api.onchange('fleet_id')
+    def _onchange_fleet_id(self):
+        if self.fleet_id:
+            # self.transport_id = self.transport_id.code
+            self.config_autotransport_id=self.fleet_id.config_autotransport_id.id
+            self.license_plate=self.fleet_id.license_plate
+            self.operator_id=self.fleet_id.driver_id.id
+            self.operator_vat=self.fleet_id.driver_id.vat_split
+            self.anio_model=self.fleet_id.model_year
+            self.license_number=self.fleet_id.location
+            self.insurance_partner_id=self.fleet_id.insurance_partner_id
+            self.permit_stc_id=self.fleet_id.permit_stc_id
+            self.insurance_policy=self.fleet_id.insurance_policy
+            self.permit_stc_number=self.fleet_id.permit_stc_number
+
+    @api.onchange('fleet_id1')
+    def _onchange_fleet2_id1(self):
+        if self.fleet_id1:
+            self.trailer_type_id=self.fleet_id1.trailer_type_id.id
+            self.license_plate1=self.fleet_id1.license_plate
+
+    @api.onchange('fleet_id2')
+    def _onchange_fleet_id2(self):
+        if self.fleet_id2:
+            self.trailer_type_id2=self.fleet_id2.trailer_type_id.id
+            self.license_plate2=self.fleet_id2.license_plate
+
+    @api.depends("transport_line_ids")
+    def get_weight(self):
+        for line in self:
+            line.weight=sum(line.transport_line_ids.mapped('weight_kg'))
+
+
+    partner_emiter_id=fields.Many2one("res.partner",string="Emisor")
+    partner_receiver_id=fields.Many2one("res.partner",string="Receptor")
+    transport = fields.Boolean(string='Transport')
+    transport_id = fields.Many2one('transport.sat', string='Transport')
+    transport_inter = fields.Selection([('0','No'),('1', 'Si')], string='Transport International', index=True, default='0', copy=False)
+    shipping_type = fields.Selection([('incomming','Incomming'),('outgoing', 'Outgoing'),('internal', 'Internal')],
+        string='Shipping Type', index=True, default='outgoing', copy=False)
+    carrier_tracking_ref = fields.Char(string='Tracking Reference', copy=False)
+
+    #Origin
+    station_id = fields.Many2one('station.sat', string='Origin Station', copy=False)
+    date_departure = fields.Datetime(string='Departure Date', copy=False)
+    origin_ref = fields.Char(string='Origin Reference', copy=False)
+    distance = fields.Float(string='Total Distance', copy=False)
+    
+    #Destiny
+    station_dest_id = fields.Many2one('station.sat', string='Destination Station', copy=False)
+    date_planned = fields.Datetime(string='Scheduled Date', copy=False)
+    destination_ref = fields.Char(string='Destination Reference', copy=False)
+    travel_distance = fields.Float(string='Distance Traveled', copy=False)
+
+    #Mercancias
+    weight = fields.Float(compute="get_weight",string='Weight')
+    weight_uom_sat_id = fields.Many2one('unit.weight.sat', string='Unit of Measure', help="Unit of measurement for Weight")
+    weight_net = fields.Float(string='Net Weight')
+
+    #Objetos relacionados
+    shipped_cfdi = fields.Boolean(string='Shipped Cfdi')
+    transport_related = fields.Selection([('invoice','Invoice'),('picking', 'Picking'),('sale', 'Sale')],
+        string='Transport related', index=True, default='invoice', copy=False)
+    invoice_relation_ids = fields.Many2many('account.move','transport_invoice_relation',
+        'transport_relation_id', 'invoice_id', 'Facturas Relacionadas', readonly=True, states={'draft': [('readonly', False)]})
+    picking_relation_ids = fields.Many2many('stock.picking','transport_picking_relation',
+        'transport_relation_id', 'picking_id', 'Albaranes Relacionados', readonly=True, states={'draft': [('readonly', False)]})    
+    sale_relation_ids = fields.Many2many('sale.order', 'transport_sale_relation', 
+        'transport_relation_id', 'sale_id', string="Ventas Relacionadas", readonly=True, states={'draft': [('readonly', False)]})
+
+    #Transport
+    transport_line_ids = fields.One2many('account.transport.line', 'invoice_id', 'Transport Lines',
+        readonly=True, states={'draft': [('readonly', False)]}, copy=True)
+
+    #AutoTransporte
+    insurance_partner_id = fields.Many2one('res.partner', string='Insurance company', copy=False)
+    insurance_policy = fields.Char(string='Insurance Policy', copy=False)
+
+    permit_stc_id = fields.Many2one('permit.stc.sat', string='Permiso STC', copy=False)
+    permit_stc_number = fields.Char(string='Num. Permiso STC', copy=False)
+
+    config_autotransport_id = fields.Many2one('config.autotransport.sat', string='Conf. Auto Transporte Federal', copy=False)
+    license_plate = fields.Char(string='Placa', copy=False)
+    anio_model = fields.Char(string='Anio Model', copy=False)
+
+    trailer_type_id = fields.Many2one('trailer.type.sat', string='Remolque', copy=False)
+    license_plate1 = fields.Char(string='Placa', copy=False)
+
+    trailer_type_id2 = fields.Many2one('trailer.type.sat', string='Remolque', copy=False)
+    license_plate2 = fields.Char(string='Placa', copy=False)
+    
+    #FigureTransport
+    operator_id = fields.Many2one('res.partner', string='Operador', copy=False)
+    operator_vat = fields.Char(string='RFC Operador', copy=False)
+    license_number = fields.Char(string='License number', copy=False)
+
+    owner_id  = fields.Many2one('res.partner', string='Propietario', copy=False)
+    lessee_id  = fields.Many2one('res.partner', string='Arrendatario', copy=False)
+    type_cfdi=fields.Selection([('I','Ingreso'),('T','Traslado')],string="Tipo CFDI",default='I',required=True)
+    fleet_id=fields.Many2one("fleet.vehicle",string="Vehiculos")
+
+    fleet_id1=fields.Many2one("fleet.vehicle",string="Remolque 1")
+    fleet_id2=fields.Many2one("fleet.vehicle",string="Remolque 1")
+
+
+
+    @api.onchange('operator_id')
+    def _onchange_operator_id(self):
+        if self.operator_id:
+            self.operator_vat = self.operator_id.vat
+            self.license_number = self.operator_id.license_number
+
+
+    def compute_transport_line(self):
+        if self.transport_related == 'invoice' and self.invoice_relation_ids:
+            product_ids=self.invoice_relation_ids.invoice_line_ids.filtered(lambda x:x.exclude_from_invoice_tab == False)
+            data=[]
+            for rec in product_ids:
+                if not data:
+                    data.append((0,0,{'product_id':rec.product_id.id,'name':rec.product_id.name,'quantity':rec.quantity,'weight_kg':rec.quantity,
+                            'product_code_sat_id':rec.code_product_sat.id or False,
+                            'product_uom_sat_id':rec.product_unit_sat.id or False,
+                            'price_subtotal':rec.price_subtotal
+                             }))
+                else:
+                    repit=False
+                    for li in data:
+                        if li[2]['product_id']==rec.product_id.id:
+                            li[2]['quantity']+=rec.quantity
+                            li[2]['weight_kg']+=rec.quantity
+                            li[2]['price_subtotal']+=rec.price_subtotal
+                            repit=True
+                    if not repit:
+                        data.append((0,0,{'product_id':rec.product_id.id,'name':rec.product_id.name,'quantity':rec.quantity,'weight_kg':rec.quantity,
+                            'product_code_sat_id':rec.code_product_sat.id or False,
+                            'product_uom_sat_id':rec.product_unit_sat.id or False,
+                            'price_subtotal':rec.price_subtotal
+                             }))
+            self.transport_line_ids.unlink()
+            self.update({'transport_line_ids':data})
+            if self.type_cfdi=='T':
+                datainv=[]
+                for line in data:
+                    datainv.append((0,0,{
+                        'product_id':line[2]['product_id'],
+                        'name':line[2]['name'],
+                        'code_product_sat':line[2]['product_code_sat_id'],
+                        'product_unit_sat':line[2]['product_uom_sat_id'],
+                        'quantity':line[2]['quantity'],
+                        #'account_id':self.journal_id.default_debit_account_id.id,
+                        'account_id':self.journal_id.default_account_id.id,
+                        'price_unit':0
+                    }))
+                self.invoice_line_ids.unlink()
+                self.update({'invoice_line_ids':datainv})
+
+
+        elif self.transport_related == 'picking' and self.picking_relation_ids:
+            if self.picking_relation_ids:
+                data=[]
+                product_ids=self.picking_relation_ids.mapped('move_lines')
+                for rec in product_ids:
+                    if not data:
+                        data.append((0,0,{'product_id':rec.product_id.id,'name':rec.product_id.name,'quantity':rec.product_uom_qty,'weight_kg':rec.product_uom_qty,
+                            'product_code_sat_id':rec.product_id.product_tmpl_id.code_product_sat.id or False,
+                            'product_uom_sat_id':rec.product_id.product_tmpl_id.product_unit_sat.id or False,
+                            'price_subtotal':rec.product_id.standard_price
+                            }))
+                    else:
+                        repit=False
+                        for li in data:
+                            if li[2]['product_id']==rec.product_id.id:
+                                li[2]['quantity']+=rec.product_uom_qty
+                                li[2]['weight_kg']+=rec.product_uom_qty
+                                li[2]['price_subtotal']+=rec.product_id.standard_price
+                                repit=True
+                        if not repit:
+                            data.append((0,0,{'product_id':rec.product_id.id,'name':rec.product_id.name,'quantity':rec.product_uom_qty,'weight_kg':rec.product_uom_qty,
+                            'product_code_sat_id':rec.product_id.product_tmpl_id.code_product_sat.id or False,
+                            'product_uom_sat_id':rec.product_id.product_tmpl_id.product_unit_sat.id or False,
+                            'price_subtotal':rec.product_id.standard_price
+                            }))
+                self.transport_line_ids.unlink()
+                self.update({'transport_line_ids':data})
+                self.transport_line_ids.unlink()
+                self.transport_line_ids=data
+                if self.type_cfdi=='T':
+                    datainv=[]
+                    for line in data:
+                        datainv.append((0,0,{
+                            'product_id':line[2]['product_id'],
+                            'name':line[2]['name'],
+                            'code_product_sat':line[2]['product_code_sat_id'],
+                            'product_unit_sat':line[2]['product_uom_sat_id'],
+                            'quantity':line[2]['quantity'],
+                            #'account_id':self.journal_id.default_debit_account_id.id,
+                            'account_id':self.journal_id.default_account_id.id,
+                            'price_unit':0
+                        }))
+                    self.invoice_line_ids.unlink()
+                    self.invoice_line_ids=datainv
+
+        elif self.transport_related == 'sale' and self.sale_relation_ids:
+            for line in self.sale_relation_ids:
+                if line:
+                    for rec in line.order_line:
+                        vals = {
+                            'invoice_id': self.id,
+                            'sale_line_id': rec.id,
+                            'picking_line_id': False,
+                            'invoice_line_id': False,
+                            'product_id': rec.product_id.id,
+                            'name': rec.name,
+                            'product_code_sat_id': rec.code_product_sat.id,
+                            'product_uom_sat_id': rec.product_unit_sat.id,
+                            'uom_id': rec.product_uom.id,
+                            'quantity': rec.product_uom_qty,
+                            'price_subtotal': rec.price_subtotal
+                        }
+                        self.env['account.transport.line'].create(vals)
+        else:
+            raise Warning(_('Seleccione su "Factura", "Venta" o "Orden de entreg" a transportar...'))
+
+
+class SaleOrder(models.Model):
+    _inherit = 'sale.order'
+
+    shipped_cfdi = fields.Boolean(string='Shipped Cfdi')
+
+
+class StockPicking(models.Model):
+    _inherit = 'stock.picking'
+
+    shipped_cfdi = fields.Boolean(string='Shipped Cfdi')
